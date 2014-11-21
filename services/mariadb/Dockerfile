@@ -8,7 +8,7 @@ RUN add-apt-repository 'deb http://mirrors.hustunique.com/mariadb/repo/10.0/debi
 RUN apt-get update
 RUN apt-get install -y mariadb-server
 RUN sed -i -e "s/^bind-address/#bind-address/" /etc/mysql/my.cnf
-RUN sed -i -e "s/^datadir.*=.*/datadir = \/data/lib/mysql" /etc/mysql/my.cnf
+RUN sed -i -e "s/^datadir.*=.*/datadir = \/data\/lib\/mysql/" /etc/mysql/my.cnf
 RUN sed -i -e "s/^innodb_buffer_pool_size.*=.*/innodb_buffer_pool_size = 64M/" /etc/mysql/my.cnf
 ADD config /config
 ADD supervisord.conf /etc/supervisor/conf.d/mariadb.conf

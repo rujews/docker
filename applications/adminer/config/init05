@@ -1,0 +1,2 @@
+mkdir -p /data/nginx/www/adminer
+cp -R /config/res/adminer /data/nginx/www/adminer

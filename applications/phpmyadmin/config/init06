@@ -1,0 +1,2 @@
+mkdir -p /data/nginx/www/phpmyadmin
+cp -R /config/res/phpmyadmin/* /data/nginx/www/phpmyadmin

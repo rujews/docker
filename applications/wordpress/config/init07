@@ -1,0 +1,2 @@
+mkdir -p /data/nginx/www/wordpress
+cp -R /config/res/wordpress/* /data/nginx/www/wordpress

@@ -6,7 +6,7 @@ RUN apt-get update
 RUN apt-get upgrade -y
 RUN apt-get install -y ca-certificates inotify-tools nano pwgen supervisor unrar unzip wget
 RUN apt-get clean
-RUN mkdir /config /data
+RUN mkdir -p /config /config/res /data
 RUN useradd -u 500 core
 ADD config /config
 ADD loop /config/loop
